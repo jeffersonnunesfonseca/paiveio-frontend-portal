@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { HeaderMenuSideNav } from '../../molecules/HeaderMenuSideNav';
+import { HeaderStyle } from './style';
 
 export const Header = () => {
     return (
@@ -10,7 +11,9 @@ export const Header = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <HeaderMenuSideNav />
+            <HeaderStyle>
+                <HeaderMenuSideNav />                
+            </HeaderStyle>
         </>
     )
 };

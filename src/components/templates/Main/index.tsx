@@ -11,11 +11,12 @@ export const Main = () => {
                     <Header />
                 </GridHeader>
                 <GridMain>
-                    a
                 </GridMain>
+
                 <GridFooter>
                     <Footer />
                 </GridFooter>                
+
             </MainGridContainer>
         
         </>

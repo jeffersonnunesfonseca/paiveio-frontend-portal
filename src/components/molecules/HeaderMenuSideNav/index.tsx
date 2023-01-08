@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { HeaderMenuSideNavDiv } from "./style"
+import { MenuSideNavOption } from "../../atoms/MenuSideNavOption";
 export const HeaderMenuSideNav = () => {
     const [state, setState] = useState("0");
 
@@ -15,12 +16,13 @@ export const HeaderMenuSideNav = () => {
 
     return (
         <>
-            <HeaderMenuSideNavDiv width={state} id="HeaderMenuSideNavDiv">
-                <a href="#" className="closebtn" onClick={closeMenu}>&times;</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Clients</a>
-                <a href="#">Contact</a>
+            <HeaderMenuSideNavDiv width={state}>
+                <MenuSideNavOption isClose={true} href="#" onclick={closeMenu} text="&times;" />
+                
+                <MenuSideNavOption href="#" text="About" />
+                <MenuSideNavOption href="#" text="Services" />
+                <MenuSideNavOption href="#" text="Client" />
+                <MenuSideNavOption href="#" text="Contact" />
             </HeaderMenuSideNavDiv>
             <button onClick={openMenu}>Abrir</button>
         </>

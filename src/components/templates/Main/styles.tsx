@@ -7,7 +7,6 @@ export const MainGridContainer = styled.div`
     'main main main main main main'
     'footer footer footer footer footer footer';
     gap: 10px;
-    background-color: #2196F3;
     padding: 10px;
 
     // & div{
