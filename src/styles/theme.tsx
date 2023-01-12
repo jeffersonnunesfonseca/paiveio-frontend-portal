@@ -1,56 +1,46 @@
-export const spacings = {
-    space01: '0.4rem',
-    space02: '0.8rem',
-    space03: '1.2rem',
-    space04: '1.6rem',
-    space05: '2.4rem',
-    space06: '3.2rem',
-    space07: '4rem',
-    space08: '4.8rem',
-    space09: '5.6rem',
-    space10: '6.4rem',
-    space11: '7.2rem',
-    space12: '8rem',
-    space13: '8.8rem',
-    space14: '9.6rem',
-} as const;
-  
-  
-export const font = {
-    light: 300,
-    normal: 400,
-    semiBold: 600,
-    bold: 700,
-    sizes: {
-      xSmall: '1.2rem',
-      small: '1.4rem',
-      normal: '1.6rem',
-      large: '1.8rem',
-      heading06: '2rem',
-      heading05: '2.4rem',
-      heading04: '2.8rem',
-      heading03: '3.2rem',
-      heading02: '3.6rem',
-      heading01: '4.2rem',
-    },
-    lineHeight: {
-      xSmall: '1.8rem',
-      small: '2.1rem',
-      normal: '2.4rem',
-      large: '2.7rem',
-      heading06: '2.8rem',
-      heading05: '2.9rem',
-      heading04: '3.4rem',
-      heading03: '3.8rem',
-      heading02: '4.3rem',
-      heading01: '5rem',
-    },
-    family: {
-      Inter: "'Inter',sans-serif",
-    },
-} as const;
-  
+
 export const mainColors = {
     principal: '#FED88DA6',
     secondary: '#696969'
 } as const
+
+export const fonts = {
+  desktop: {
+    title: {
+      fontSize: "36px",
+      fontWeight: "600",
+      letterSpacing: "0px",
+      color: "rgb(39, 43, 65)"
+    },
+    subtitle: {
+      fontSize: "21px",
+      fontWeight: "600",
+      letterSpacing: "0.1px",
+      color: "rgb(39, 43, 65)"
+    },
+    text: {
+      fontSize: "14px",
+      fontWeight: "500",
+      color: "rgb(110, 110, 110)"
+    }
+  },
+  mobile:{
+    title: {
+      fontSize: "21px",
+      fontWeight: "600",
+      letterSpacing: "0px",
+      color: "rgb(39, 43, 65)"
+    },
+    subtitle: {
+      fontSize: "14px",
+      fontWeight: "600",
+      letterSpacing: "0.1px",
+      color: "rgb(39, 43, 65)"
+    },
+    text: {
+      fontSize: "12px",
+      fontWeight: "500",
+      color: "rgb(110, 110, 110)"
+    }
+  }
+}

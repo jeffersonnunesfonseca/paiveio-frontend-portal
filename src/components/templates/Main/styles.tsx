@@ -8,14 +8,6 @@ export const MainGridContainer = styled.div`
     'footer footer footer footer footer footer';
     gap: 10px;
     padding: 10px;
-
-    // & div{
-    //     background-color: rgba(255, 255, 255, 0.8);
-    //     text-align: center;
-    //     padding: 20px 0;
-    //     font-size: 30px;
-    // }
-
 `
 export const GridHeader = styled.div`grid-area: header;`
 export const GridMain = styled.div`grid-area: main;`

@@ -1,7 +1,5 @@
-
-
 import Props from "./interface";
-
+import * as theme from '../../../styles/theme'
 export const MenuSideNavOption = ({
     isClose,
     href,
@@ -15,23 +13,26 @@ export const MenuSideNavOption = ({
             a {
                 padding: 8px 8px 8px 32px;
                 text-decoration: none;
-                color: #818181;
+                color: #ffff;
                 display: block;
                 transition: 0.3s;
                 right: 25px;
                 position: ${isClose?'absolute':'none'};
                 top: ${isClose?'0':'none'}px;
-                font-size: ${isClose?'36':'20'}px;
-                margin-left: ${isClose?'50':'none'}px;            
+                font-size: ${theme.fonts.mobile.subtitle.fontSize};
+                letter-spacing: ${theme.fonts.mobile.subtitle.letterSpacing};
+                font-weight: ${theme.fonts.mobile.subtitle.fontWeight};
+                margin-left: ${isClose?'50':'none'}px;
             }
-            
+
             a:hover {
-                color: #f1f1f1;
-            }           
-           
+                color: black;
+            }
+
            `}</style>
+
             <a href={href} onClick={onclick}>{text}</a>
         </>
     )
-    
+
 }
