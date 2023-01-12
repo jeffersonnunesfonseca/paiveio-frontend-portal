@@ -12,7 +12,6 @@ export const Header = () => {
                     background-color: ${theme.mainColors.principal};
                     width: 100vw;
                     height: 70px;
-                    position: absolute;
                     top: 0;
                     left: 0;
                     padding: 30px;

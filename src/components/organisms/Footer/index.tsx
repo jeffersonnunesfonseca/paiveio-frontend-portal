@@ -8,7 +8,7 @@ export const Footer = () => {
                     background-color: ${theme.mainColors.secondary};
                     width: 100vw;
                     height: 200px;
-                    position: absolute;
+                    position: relative;
                     bottom: 0;
                     left: 0;
                 }
