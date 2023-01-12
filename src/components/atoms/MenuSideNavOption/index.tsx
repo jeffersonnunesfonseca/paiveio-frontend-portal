@@ -19,7 +19,7 @@ export const MenuSideNavOption = ({
                 right: 25px;
                 position: ${isClose?'absolute':'none'};
                 top: ${isClose?'0':'none'}px;
-                font-size: ${theme.fonts.mobile.subtitle.fontSize};
+                font-size: ${!isClose?theme.fonts.mobile.subtitle.fontSize:theme.fonts.mobile.title.fontSize};
                 letter-spacing: ${theme.fonts.mobile.subtitle.letterSpacing};
                 font-weight: ${theme.fonts.mobile.subtitle.fontWeight};
                 margin-left: ${isClose?'50':'none'}px;
