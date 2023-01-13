@@ -1,5 +1,6 @@
 import { Header } from "../../organisms/Header"
 import { Footer } from "../../organisms/Footer"
+import { HomeSearchEngine } from "../../organisms/HomeSearchEngine"
 import {MainGridContainer, GridHeader, GridMain, GridFooter} from './styles'
 export const Main = () => {
 
@@ -14,6 +15,10 @@ export const Main = () => {
                 }
 
                 #item1 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
                     background-color: lime;
                     width: 100vw;
                     height: 200px;
@@ -37,11 +42,12 @@ export const Main = () => {
                 </GridHeader>
                 <GridMain>
                     <div id="body-containers">
-                        <div id="item1">a</div>
+                        <div id="item1">
+                           <HomeSearchEngine />
+                        </div>
                         <div id="item2">a</div>
                         <div id="item3">a</div>
                     </div>
-
                 </GridMain>
 
                 <GridFooter>
