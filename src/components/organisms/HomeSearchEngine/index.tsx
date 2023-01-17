@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { MenuSideNavOption } from "../../atoms/MenuSideNavOption";
-import * as theme from '../../../styles/theme'
+import { InputSearch } from "../../molecules/InputSearch";
 export const HomeSearchEngine = () => {
 
     return (
@@ -13,7 +12,6 @@ export const HomeSearchEngine = () => {
                     box-sizing: border-box;
                     width: 80vw;
                     text-align: center;
-                    box-shadow: 0px 0px 10px black;
                     height: 7vh;
                     display: flex;
                     justify-content: center;
@@ -22,7 +20,7 @@ export const HomeSearchEngine = () => {
             `}</style>
 
             <div id='search-engine-container'>
-                <span>a</span>
+                <InputSearch />
             </div>
 
         </>

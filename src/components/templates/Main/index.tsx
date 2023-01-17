@@ -1,6 +1,8 @@
 import { Header } from "../../organisms/Header"
 import { Footer } from "../../organisms/Footer"
 import { HomeSearchEngine } from "../../organisms/HomeSearchEngine"
+import { GalleryCards } from "../../organisms/GalleryCards"
+import * as theme from '../../../styles/theme'
 import {MainGridContainer, GridHeader, GridMain, GridFooter} from './styles'
 export const Main = () => {
 
@@ -19,15 +21,18 @@ export const Main = () => {
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    background-color: lime;
                     width: 100vw;
                     height: 200px;
                 }
 
                 #item2 {
-                    background-color: yellow;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
                     width: 100vw;
-                    height: 200px;
+                    height: 350px;
+                    background-color: ${theme.mainColors.principal}
                 }
 
                 #item3 {
@@ -45,7 +50,9 @@ export const Main = () => {
                         <div id="item1">
                            <HomeSearchEngine />
                         </div>
-                        <div id="item2">a</div>
+                        <div id="item2">
+                            <GalleryCards/>
+                        </div>
                         <div id="item3">a</div>
                     </div>
                 </GridMain>
