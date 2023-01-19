@@ -21,13 +21,10 @@ export const InputSearch = ({
                 outline: none;
             }
 
-
-
-
            `}</style>
 
             <SearchButton/>
-            <input type="search" placeholder="Encontre um produto."/>
+            <input type="search" placeholder="Ex: velas em parana, curitiba"/>
         </>
     )
 

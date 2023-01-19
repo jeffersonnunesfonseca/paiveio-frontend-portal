@@ -18,6 +18,9 @@ export const Card = ({
                     flex-basis: 80%;
                     flex-grow: 0;
                     flex-shrink: 0;
+                    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+                    border-radius: 5px 5px 5px 5px;
+                    background: white;
 
 
                 }
@@ -27,14 +30,14 @@ export const Card = ({
 
                 }
                 img {
-                    border: 1px solid;
+                    // border: 1px solid;
                     width: 300px;
                     height: 230px;
 
                 }
 
                 #info {
-                    border: 1px solid;
+                    // border: 1px solid;
                     width: 100%;
                     height: 25%;
                 }
