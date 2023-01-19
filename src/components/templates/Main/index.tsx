@@ -51,7 +51,7 @@ export const Main = () => {
                            <HomeSearchEngine />
                         </div>
                         <div id="item2">
-                            <GalleryCards/>
+                            <GalleryCards />
                         </div>
                         <div id="item3">a</div>
                     </div>
